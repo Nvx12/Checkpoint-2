@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <!--Head-->
-  <head>
-    <meta charset="utf-8" />
-    <title>My Portfolio template</title>
-    <link rel="stylesheet" href="/assets/CSS/styles.css">
-  </head> 
-  <!--Body-->
-  <body align="middle">
+<!--Head-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Portfolio template</title>
+  <link rel="stylesheet" href="/assets/CSS/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<!--Body-->
+
+<body>
   <!--Header-->
   <header>
-    <div >
-      <ul class="navbar" >
-        <a class ="active" href="#Home">Home</a
-        >|
-        <a href="#About"> About</a
-        >|
-        <a href="#Work"> Work </a
-        >|
-        <a href="#Resume"> Resume </a
-        >|
-        <a href="#Contact"> Contact </a
-        >|
-      </ul>
-    </div>
+    <ul class="navbar">
+      <a class="active" href="#Home">Home</a>
+      <a href="#About"> About</a>
+      <a href="#Work"> Work </a>
+      <a href="#Resume"> Resume </a>
+      <a href="#Contact"> Contact </a>
+    </ul>
   </header>
-  
-    <!--About section-->
-    <section id ="About" class="About">
-      <article>
-        <h1 style="color: red">About</h1>
-        <h2 style="color: blue">Why Hire me ?</h2>
-        <center>
-          <p style="background-color: powderblue" align="center">
-            I learn things quickly and love to work in team. Also will not
-            hesitate to work alone if given. Learning new things is my hobby. If
-            you give me a chance to work with you I will enhance my skills
-            ultimately helps company to grow more.
-          </p>
-        </center>
 
-        <img
-          src="/assets/images/ras.jpg"
-          alt="Girl in a jacket"
-          style="width: 100px; height: 110px"
-        />
+  <body>
+    <!--About section-->
+    <section id="About" class="About">
+      <article>
+        <h2 style="color: red">About</h1>
+          <h3 class="box">Why Hire me ?
+        </h2>
+        <p class="centered" style="background-color: powderblue">
+          I learn things quickly and love to work in team. Also will not
+          hesitate to work alone if given. Learning new things is my hobby. If
+          you give me a chance to work with you I will enhance my skills
+          ultimately helps company to grow more.
+        </p>
+        <div class="image">
+          <img src="/assets/images/ras.jpg" alt="Girl in a jacket" width="500" height="300" />
+        </div>
         <dl>
           <dt>Frameworks</dt>
           <dd>spring boot , quarkus</dd>
@@ -54,24 +47,16 @@
       </article>
     </section>
     <section id="Work" class="Work">
-      <h1 style="color: red">Work section</h1>
-      <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com//embed/7CqJlxBYj-M"
-      >
-      </iframe>
+      <h2 style="color: red">Work section</h1>
+        <iframe width="420" height="315" src="https://www.youtube.com//embed/7CqJlxBYj-M">
+        </iframe>
     </section>
     <!--Resume section-->
-    <section id ="Resume" class="Resume">
-      <h1 style="color: red">Resume</h1>
-      <h4 style="color: blue">Resume Table</h2>
-        <style>
-          table, th, td {
-            border:1px solid black;
-          }
-          </style>
-      <table style="width:60%" align="center">
+    <section id="Resume" class="Resume">
+      <h2 style="color: red">Resume</h1>
+        <h4 style="color: blue">Resume Table
+      </h2>
+      <table id="table">
         <tr>
           <th>Company</th>
           <th>Contact</th>
@@ -112,43 +97,31 @@
 
     <!--Footer-->
 
-    <footer align="middle">
+    <footer>
       <!--Contact section-->
-      <section id ="Contact" class="Contact">
-        <h1 style="color: red">Contact</h1>
-
-        <span class="email">raslensafsaf@gmail.com</span>
-        <span class="number">+21625864907</span>
-        <br />
-        <a href="https://www.linkedin.com/in/safsaf-mohamed-raslen-5244b9158/"
-          >linkedin</a
-        >
-        <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
-          <label for="fname">Email</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="fname">Phone number</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <button>Send</button>
-        </form>
-        <nav>
-          <ul align="middle">
-            <a href="#Home">Home</a
-            >|
-            <a href="#About"> About</a
-            >|
-            <a href="#Work"> Work </a
-            >|
-            <a href="#Resume"> Resume </a
-            >|
-            <a href="#Contact"> Contact </a
-            >|
-          </ul>
-        </nav>
+      <section id="Contact" class="Contact">
+        <h2 style="color: red">Contact</h1>
+          <span class="email">raslensafsaf@gmail.com</span>
+          <span class="number">+21625864907</span>
+          <div>
+            <a href="https://www.linkedin.com/in/safsaf-mohamed-raslen-5244b9158/">linkedin</a>
+          </div>
+          <div>
+            <form>
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" placeholder="First name" />
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" placeholder="Last name" />
+              <label for="fname">Email</label>
+              <input type="text" id="fname" name="fname" placeholder="Email" />
+              <label for="fname">Phone number</label>
+              <input type="text" id="fname" name="fname" placeholder="Phone number" />
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="copyright">GoMyCode copyright 2022</div>
       </section>
     </footer>
   </body>
+
 </html>
